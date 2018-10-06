@@ -58,6 +58,15 @@ body {
     color: var(--blockcol);
 }
 
+/* Grid Style*/
+
+.page{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    width: 1600px;
+    margin: 0 auto;
+}
+
 /*main styles*/
 
 p{
@@ -68,13 +77,14 @@ p{
 }
 
 .main{
-    margin: 220px auto;
-    width: 1000px;
+    margin: 240px auto;
+    width: 70%;
+    grid-area: 1 / 1 / span 1 / span 1;
 }
 .main .news{
     margin: 0 auto;
     padding-bottom: 20px;
-    width: 800px;
+    width: 70%;
     border: 10px solid var(--bannercol);
     padding-left: 50px;
     padding-right: 50px;
@@ -95,7 +105,7 @@ p{
     padding: 5px;
     border-radius:
     border: 6px solid var(--normcol);
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
     background-color: var(--backcol);
 }
@@ -107,7 +117,7 @@ p{
 .latest {
     margin: 50px auto;
     padding: 20px;
-    width: 800px;
+    width: 70%;
     background-color: var(--bannercol);
     border-bottom: 8px solid black;
     border-top: 8px solid black;
@@ -157,7 +167,44 @@ p{
 .Neweven{
     float: right;
 }
+
+/* sidebar style*/
+
+.sidebar{
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.sidenav h3{
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.sidenav p{
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.sidenav{
+    width: 200px;
+    height: 500px;
+    position: fixed;
+    top: 180px;
+    right: 20px;
+    background-color: var(--bannercol);
+    border-bottom: 8px solid black;
+    border-top: 8px solid black;
+    border-left: 8px solid var(--emphasiscol);
+    border-right: 8px solid var(--emphasiscol);
+}
+
+.topfilm{
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*categories style*/
+
 .categories li{
     list-style: none;
     font-family: sans-serif;
