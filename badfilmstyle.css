@@ -63,7 +63,7 @@ body {
 .page{
     display: grid;
     grid-template-columns: 6fr 1fr;
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -186,7 +186,8 @@ p{
 }
 
 .sidenav{
-    width: 200px;
+    min-width: 50px;
+    max-width: 150px;
     height: 500px;
     position: fixed;
     top: 180px;
